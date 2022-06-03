@@ -1,0 +1,18 @@
+{
+	"name":"queryLazy",
+	"type":"function",
+	"syntax":"queryLazy(sql [listener, params, options])",
+	"returns":"query",
+	"description":"Pass the records without creating a query as result.",
+	"related":["cfquery","cfqueryparam"],
+	"engines":{
+		"lucee":{"minimum_version":"5", "docs":"https://luceeserver.atlassian.net/browse/LDEV-2835","notes":""}
+		},
+	"links":[],
+	"params":[
+		{"name":"sql","description":"SQL string to execute.","values":[],"default":"","type":"string","required":true},
+    {"name":"listener","description":""},
+		{"name":"params","description":"Array or Struct of parameter values. When passing an array use ? as place holders. When passing a struct use :keyName where keyName is the name of the key in the structure corresponding to the parameter. The struct or array can be a struct with keys such as the following.","values":[],"default":"","type":"any","required":false},
+		{"name":"options","description":"Struct containing query options, all cfquery tag attributes are supported except the name attribute.","values":[],"default":"","type":"struct","required":false}
+	]
+}
