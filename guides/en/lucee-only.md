@@ -138,8 +138,6 @@
 
 `htmlParse`
 
-`imageCaptcha` - Minimum Version: 5
-
 `imageDrawImage` - Minimum Version: 4.5
 
 `imageFilter`
